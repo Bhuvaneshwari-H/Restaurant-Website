@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="style.css">
+    <title>ContactUs</title>
+    <link rel="stylesheet" type="text/CSS" href="contact.css">
+
+    <script type="text/javascript">
+        function myfunction(){
+            alert("Your Form is Submitted");
+        }
+    </script>
+</head>
+  
+<body style="background-color:#ff9999">
+    <b><div id="ContactUs">
+        <h1>Contact Us</h1>
+        <form action="#">
+            <div class="form-shape">
+                <label for="query" style="font-size:20px">
+                    Type of Query
+                </label>
+                <select name="myQuery" id="query">
+                    <option value="sel" selected>
+                        Select
+                    </option>
+                    <option value="ord">
+                        Order related Issues
+                    </option>
+                    <option value="Site">
+                        Site related Issues
+                    </option>
+                    <option value="fed">
+                        Complaint related Issues
+                    </option>
+                    <option value="others">
+                        Others
+                    </option>
+                </select></br></br>
+            </div>
+            <div class="form-shape">
+                <label for="name" style="font-size:20px">Name    </label>
+                <input type="text" name="myName" 
+                    id="name" 
+                    placeholder="Enter your Name"></br></br>
+            </div>
+            <div class="form-shape">
+                <label for="email" style="font-size:20px">Email-Id</label>
+                <input type="email" name="myEmail" 
+                    id="email" 
+                    placeholder="Enter your email">
+            </div></br></br>
+            <div class="form-shape">
+                <label for="pho" style="font-size:20px">Phone Number</label>
+                <input type="phone" name="myPhone" 
+                    id="pho" 
+                    placeholder="Enter your Phone no">
+            </div></br></br>
+            <div id="radio" style="font-size:20px">
+                Are you a member of OnlneFoodShop:
+                Yes <input type="radio" name="eligible">
+                No <input type="radio" name="eligible">
+            </div>
+            <div class="form-shape">
+                <label for="message" style="font-size:20px">
+                    Ellaborate your query
+                </label>
+                <textarea name="mesg" id="message" 
+                    cols="30" rows="10" style="font-size:20px">
+                </textarea>
+            </div>
+            <input type="submit" value="Submit" onclick="myfunction()">
+            <input type="reset" value="Reset">
+        </form>
+    </div></b>
+</body>
+  
+</html>
